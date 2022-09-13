@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+img {
+    display: block;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.title {
+    font-size: larger;
+}
+.navigation {
+    align-self: center;
+}
+.navigation ul {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 0 10px;
+    text-align: center;
+}
+.navigation ul li {
+    font-size: smaller;
+    list-style: none;
+    background-color: black;
+    padding: 5px 50px;
+    box-sizing: border-box;
+}
+.banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 20px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.menu h3, .menu p {
+    text-align: center;
+}
+.groove {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.gallery {
+    margin: 60px 0;
+}
+.gallery h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.album {
+    box-sizing: border-box;
+    border: 5px solid black;
+    padding: 10px;
+}
+.album ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    list-style: none;
+    gap: 10px;
+}
